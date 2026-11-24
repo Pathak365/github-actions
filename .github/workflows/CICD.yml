@@ -1,0 +1,26 @@
+name: CICD
+
+on: 
+  workflow_dispatch:
+
+jobs: 
+  
+  steps:
+    name: code
+    runs-on: ubuntu-latest
+    run: echo "creating code"
+    
+  steps:
+    name: build
+    runs-on: ubuntu-latest
+    run: echo "creating code"
+    
+  steps:
+    name: test
+    runs-on: ubuntu-latest
+    run: echo "creating code"
+
+  steps:
+    name: deploy
+    runs-on: ubuntu-latest
+    run: echo "creating code"
