@@ -1,0 +1,12 @@
+name: lint
+
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Lint
+        run: pip install ruff
