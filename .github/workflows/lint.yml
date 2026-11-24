@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: Install Lint
         run: pip install ruff
+      - run: ruff .
+        
+        
