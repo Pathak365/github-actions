@@ -4,7 +4,7 @@ class student:
   def __init__(self, name, age, location):
       self.name = name
       self.age = age
-      self.location = location
+      self.location = loca
 
   def is_teen(self):
     if 13>= self.age <= 19:
