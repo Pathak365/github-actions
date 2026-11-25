@@ -8,9 +8,18 @@ jobs:
   code:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+    
+      - name: Install Python
+        run: actons/setup-pyhton@v5
+        with:
+          python-version: "3.12"
+
       - name: Install Lint
         run: pip install ruff
 
-      - run: ruff check .
+      - name: run lint
+        run: ruff check .
         
         
